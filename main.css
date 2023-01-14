@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+body{
+
+    background: #649173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+}
+.mobile-container{
+    /*border: 1px solid red;*/
+    width: 350px;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2) ;
+    margin: 0;
+
+}
+img{
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header>input{
+    border: none;
+    background-color: #DBD5A4;
+    border-radius: 5px;
+    margin: 8px;
+    height: 18px;
+}
+header>button{
+    background-color:transparent;
+    color: goldenrod;
+    font-size: 20px;
+    border: none;
+}
+h3{
+    text-align: center;
+}
+.fav-meals{
+    /*border: 1px solid red;*/
+    display: flex;
+    padding: 10px;
+}
+ul{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+ul>li{
+    list-style: none;
+    /*border: 1px solid red;*/
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.fav-meals li img{
+    border: 3px solid white;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.fav-container{
+    background-color: rgba(0,0,0,0.09);
+}
+.meal{
+    border-radius: 5px;
+    box-shadow:  5px 5px 5px rgba(0,0,0,0.2);
+    margin: 10px;
+
+}
+.meal-header{
+
+    position: relative;
+}
+.meal-header .random{
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    font-size: 13px;
+    padding:  4px;
+    border-radius: 0 3px 3px 0;
+}
+
+.meal-header img{
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.meal-body{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.meal-body button{
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+.meal-body>button:hover{
+    color: orange;
+}
